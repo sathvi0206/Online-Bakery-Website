@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff8f5;
+    color: #333;
+}
+
+/* Navigation Bar */
+
+header {
+    background-color: #8b4513;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffd6a5;
+}
+
+/* Hero Section */
+
+.hero {
+    height: 450px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1578985545062-69928b1d9587")
+    center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* About */
+
+.about {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+    color: #8b4513;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Menu */
+
+.menu {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.product-image {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    color: #8b4513;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.product h4 {
+    font-size: 20px;
+    color: #e67e22;
+    margin: 10px;
+}
+
+.product button,
+.contact button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover,
+.contact button:hover {
+    background-color: #e67e22;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffe5d0;
+}
+
+.contact p {
+    margin: 10px;
+    font-size: 17px;
+}
+
+.contact button {
+    margin-top: 15px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
